@@ -1,0 +1,306 @@
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="/admin">Dashboard</a>
+    </li>
+    <li class="breadcrumb-item active">Gift Management</li>
+</ol>
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">All Gifts</h1>
+    <a href="/admin/product/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        <i class="fa fa-plus fa-sm text-white-50"></i> Add New Gift
+    </a>
+</div>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3 d-flex justify-content-between align-items-center">
+        <h6 class="m-0 font-weight-bold text-primary">Gift List</h6>
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-filter"></i> Filter
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">All Gifts</a>
+                <a class="dropdown-item" href="#">In Stock</a>
+                <a class="dropdown-item" href="#">Out of Stock</a>
+                <a class="dropdown-item" href="#">Active</a>
+                <a class="dropdown-item" href="#">Inactive</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Gift Name</th>
+                    <th>Category</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Status</th>
+                    <th>Created Date</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img src="/images/img-1.png" alt="Premium Gift Basket" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Premium Gift Basket Deluxe</strong>
+                        <br>
+                        <small class="text-muted">Birthday Special</small>
+                    </td>
+                    <td>Birthday Gifts</td>
+                    <td>GiftStyle</td>
+                    <td>$89.99</td>
+                    <td>
+                        <span class="badge badge-success">45 in stock</span>
+                    </td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-15</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/product/edit/1" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <img src="/images/img-2.png" alt="Custom Engraved Watch" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Custom Engraved Luxury Watch</strong>
+                        <br>
+                        <small class="text-muted">Anniversary Special</small>
+                    </td>
+                    <td>Anniversary Gifts</td>
+                    <td>TimeCraft</td>
+                    <td>$199.99</td>
+                    <td>
+                        <span class="badge badge-success">32 in stock</span>
+                    </td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-14</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/product/edit/2" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <img src="/images/img-3.png" alt="Floral Arrangement" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Premium Floral Arrangement</strong>
+                        <br>
+                        <small class="text-muted">Fresh Flowers</small>
+                    </td>
+                    <td>Romantic Gifts</td>
+                    <td>BloomMagic</td>
+                    <td>$65.00</td>
+                    <td>
+                        <span class="badge badge-warning">5 in stock</span>
+                    </td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-13</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/product/edit/3" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <img src="/images/img-5.png" alt="Chocolate Hamper" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Luxury Chocolate Gift Hamper</strong>
+                        <br>
+                        <small class="text-muted">Premium Chocolates</small>
+                    </td>
+                    <td>Holiday Gifts</td>
+                    <td>ChocoDelight</td>
+                    <td>$45.99</td>
+                    <td>
+                        <span class="badge badge-success">26 in stock</span>
+                    </td>
+                    <td><span class="badge badge-success">Active</span></td>
+                    <td>2024-01-12</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/product/edit/4" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <img src="/images/img-6.png" alt="Kids Toy Set" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                    </td>
+                    <td>
+                        <strong>Educational Kids Toy Set</strong>
+                        <br>
+                        <small class="text-muted">Learning Toys</small>
+                    </td>
+                    <td>Kids Gifts</td>
+                    <td>PlaySmart</td>
+                    <td>$39.99</td>
+                    <td>
+                        <span class="badge badge-danger">Out of stock</span>
+                    </td>
+                    <td><span class="badge badge-warning">Inactive</span></td>
+                    <td>2024-01-11</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="/admin/product/edit/5" class="btn btn-warning">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <button class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            <button class="btn btn-info">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Quick Stats Cards -->
+<div class="row">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Total Gifts
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">324</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-gift fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            In Stock
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">289</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-check-circle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            Low Stock
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-exclamation-triangle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-danger shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                            Out of Stock
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">17</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa fa-times-circle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
